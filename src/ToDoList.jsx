@@ -12,6 +12,7 @@ function ToDoList(props) {
   const { tasks } = props;
 
   return (
+    <>
       <ScrollView>
         {tasks.map((task, index) => (
             <React.Fragment key={index}>
@@ -23,8 +24,10 @@ function ToDoList(props) {
             </React.Fragment>
           ))}
       </ScrollView>        
-      );
-    }
+    </>
+  );
+}
+  
     
 
 const styles = StyleSheet.create({
